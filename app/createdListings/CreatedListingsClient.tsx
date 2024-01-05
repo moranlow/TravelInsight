@@ -17,8 +17,6 @@ const TripsClient: React.FC<CreatedLisitngsClientProps> = ({
 	createdListings,
 	currentUser,
 }) => {
-	const router = useRouter();
-
 	return (
 		<Container>
 			<Heading
