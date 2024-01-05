@@ -13,6 +13,7 @@ const ListingGuide: React.FC<ListingGuideProps> = ({ guides }) => {
 			<Heading title="Tour Guide" />
 			{guides?.map((guide) => (
 				<Heading
+					key={guide.id}
 					title={guide.title}
 					subtitle={guide.description}
 				/>

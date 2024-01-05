@@ -33,7 +33,7 @@ enum STEPS {
 	TOUR_PART = 5,
 }
 
-const createModal = () => {
+const CreateModal = () => {
 	const router = useRouter();
 	const createModal = useCreateModal();
 	const [step, setStep] = useState(STEPS.LOCATION_PART);
@@ -336,4 +336,4 @@ const createModal = () => {
 	);
 };
 
-export default createModal;
+export default CreateModal;
