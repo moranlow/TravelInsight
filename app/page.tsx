@@ -9,8 +9,9 @@ import getCurrentUser from "@/app/actions/getCurrentUser";
 interface HomeProps {
 	searchParams: IListingsParams;
 }
+export const dynamic = "auto";
 
-export default async function Home({ searchParams }: HomeProps) {
+const Home = async ({ searchParams }: HomeProps) => {
 	const listings = await getListings(searchParams);
 	const currentUser = await getCurrentUser();
 
@@ -39,4 +40,6 @@ export default async function Home({ searchParams }: HomeProps) {
 			</Container>
 		</ClientOnly>
 	);
-}
+};
+
+export default Home;
