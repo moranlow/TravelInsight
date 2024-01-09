@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import ClientOnly from "./components/ClientOnly";
 import EmptyState from "./components/EmptyState";
 import Container from "./components/Container";
@@ -9,7 +10,6 @@ import getCurrentUser from "@/app/actions/getCurrentUser";
 interface HomeProps {
 	searchParams: IListingsParams;
 }
-export const dynamic = "auto";
 
 const Home = async ({ searchParams }: HomeProps) => {
 	const listings = await getListings(searchParams);
